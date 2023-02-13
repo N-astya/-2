@@ -1,4 +1,5 @@
-﻿namespace Interface
+using System;
+namespace Interface
 {
     internal class Program
     {
@@ -81,7 +82,7 @@
 
         public void Play()
         {
-            Console.WriteLine($"Играет гитара с {stringsCount} струнами");
+            Console.WriteLine("Играет гитара, количество струн - " + stringsCount);
         }
     }
     class Drum : Instrument
@@ -94,7 +95,7 @@
 
         public void Play()
         {
-            Console.WriteLine($"Играет барабан с размером: {size} см");
+            Console.WriteLine("Играет барабан, размер барабана - " + size);
         }
     }
     class Trumpet : Instrument
@@ -107,7 +108,7 @@
 
         public void Play()
         {
-            Console.WriteLine($"Играет труба с диаметром: {diameter} см");
+            Console.WriteLine("Играет труба, её диаметр - " + diameter);
         }
     }
 }
